@@ -1,0 +1,108 @@
+body {
+    height: 100vh;
+    display: flex;
+    line-height: 1.4;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    background: rgb(0,0,0);
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,12,8,1) 0%, rgba(0,212,255,1) 100%);
+    
+}
+.container {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #196f72;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.title {
+    color: #fff;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,12,8,1) 0%, rgb(3, 203, 243) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+input {
+    width: 100%;
+    border:none;
+    padding: 13px;
+    border-radius: 4px;
+    outline-color: #11aaaf;
+}
+input:focus {
+    color:#11aaaf
+}
+.form-container {
+    flex: 3;
+}
+.right-form,
+.left-form {
+    flex: 1;
+}
+.left-form {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+    background: url('../image/banner.jpg');
+    background-size: cover;
+    background-position: 95% 10%;
+    border-radius: 10px 0 0 10px;
+}
+.right-form {
+    display: flex;
+    background: #0dbbb8;
+    align-items: flex-start;
+    justify-content: flex-end;
+    border-radius: 0 10px 10px 0;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+header {
+    gap:10px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.line {
+    height: 1px;
+    width: 200px;
+    background: #44d6db;
+}
+span {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border-radius: 40px;
+    background: #26d5db;
+}
+button {
+    padding: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 4px;
+    background: #11aaaf;
+    transition: all .3s ease;
+}
+.form-group {
+    padding: 10px;
+}
+::placeholder, button {
+    font-family: "Hanuman", serif;
+}
+.form-header {
+    text-align: center;
+}
+.logo {
+    border-radius: 40px;
+    width: 20%;
+}
+.robot {
+    width: 80%;
+}
